@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D68D456B-B63C-42ED-AA9B-7B68C7687C4F"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "508F6D43-985D-4344-A6B0-329FBFFE3592"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeTest/Utility/GFunction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "setHome()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1DC9E93E-48AF-45FB-9E02-AC69299E0192"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeTest/Utility/GFunction.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "GFunction"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "1DC9E93E-48AF-45FB-9E02-AC69299E0192 - 7d54f0c2cc33ec42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeTest.GFunction.mainEmail.getter : Swift.String"
+                  moduleName = "CodeTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/logicloops/Documents/CodeTest/CodeTest/Utility/GFunction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "1DC9E93E-48AF-45FB-9E02-AC69299E0192 - 8c9e77f99518fc5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeTest.GFunction.mainEmail.setter : Swift.String"
+                  moduleName = "CodeTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/logicloops/Documents/CodeTest/CodeTest/Utility/GFunction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "174">
+               </Location>
+               <Location
+                  uuid = "1DC9E93E-48AF-45FB-9E02-AC69299E0192 - 633c941e7a0cc3d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeTest.GFunction.mainEmail.modify : Swift.String"
+                  moduleName = "CodeTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/logicloops/Documents/CodeTest/CodeTest/Utility/GFunction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "1DC9E93E-48AF-45FB-9E02-AC69299E0192 - 97e3142e4b69625e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeTest.GFunction.mainEmail.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CodeTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/logicloops/Documents/CodeTest/CodeTest/Utility/GFunction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "1DC9E93E-48AF-45FB-9E02-AC69299E0192 - a85462e8c4b1e6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeTest.GFunction.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CodeTest.GFunction"
+                  moduleName = "CodeTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/logicloops/Documents/CodeTest/CodeTest/Utility/GFunction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "1DC9E93E-48AF-45FB-9E02-AC69299E0192 - 31d7307fa184f10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodeTest.GFunction.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CodeTest.GFunction&gt;"
+                  moduleName = "CodeTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/logicloops/Documents/CodeTest/CodeTest/Utility/GFunction.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
