@@ -8,7 +8,7 @@ enum ConvertType {
 
 class GFunction: UIViewController {
     static let shared   : GFunction = GFunction()
-
+    var mainEmail = ""
     private func getLastController() -> UIViewController? {
         if let tabBarVC = topMostWindowController() as? UITabBarController {
             if let NAV = tabBarVC.viewControllers?[tabBarVC.selectedIndex] as? UINavigationController {
