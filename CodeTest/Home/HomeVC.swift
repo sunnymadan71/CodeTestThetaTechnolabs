@@ -11,23 +11,27 @@ class TblParentUserData : UITableViewCell{
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblAge: UILabel!
     @IBOutlet weak var lblEmail: UILabel!
-    var cellData : ChildUserListModel!
+    var cellData : UserList!
    
 }
 class TblChildUserData : UITableViewCell{
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblAge: UILabel!
     @IBOutlet weak var lblEmail: UILabel!
-    var cellData : ChildUserListModel!
+    var cellData : ChildList!
 }
 class HomeVC: UIViewController {
 
     @IBOutlet weak var tblUserList: UITableView!
+    @IBOutlet weak var txtSearch: UISearchBar!
     
     private let numberOfActualRowsForSection = 1
-    static let apiLink = "http://1059-106-214-125-28.ngrok.io"
+    static let apiLink = "http://139.162.53.200:3000/"
     var selectedCellIndexPath: IndexPath?
-    var arrParent = [ChildUserListModel]()
+    var arrParent = [UserList]()
+    var arrChild = [ChildList]()
+    var arrMainParent : UserList?
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
@@ -60,7 +64,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrParent[section].isSelected ? (1+numberOfActualRowsForSection) : 1
+        return arrChild[section].isSelected  ? (1+numberOfActualRowsForSection) : 1
     }
    
     
@@ -80,7 +84,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
             return cell
         }else{
             let cell = tblUserList.dequeueReusableCell(withIdentifier: "TblChildUserData") as! TblChildUserData
-            let data = arrParent[indexPath.section]
+            let data = arrChild[indexPath.section]
             cell.cellData = data
             cell.lblName.text = data.name
             cell.lblAge.text = "\(String(describing: data.age))"
@@ -91,50 +95,22 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            arrParent[indexPath.section].isSelected = !arrParent[indexPath.section].isSelected
+            arrChild[indexPath.section].isSelected = !arrChild[indexPath.section].isSelected
             
             tblUserList.reloadSections([indexPath.section], with: .automatic)
         }
     }
+    
 }
-extension UIView {
-    fileprivate typealias ReturnGestureAction = (() -> Void)?
-    fileprivate struct AssociatedObjectKeys {
-        static var tapGestureRecognizer = "MediaViewerAssociatedObjectKey_mediaViewer1"
-    }
-    fileprivate var tapGestureRecognizerAction: ReturnGestureAction? {
-        set {
-            if let newValue = newValue {
-                // Computed properties get stored as associated objects
-                objc_setAssociatedObject(self, &AssociatedObjectKeys.tapGestureRecognizer, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
-            }
-        }
-        get {
-            let tapGestureRecognizerActionInstance = objc_getAssociatedObject(self, &AssociatedObjectKeys.tapGestureRecognizer) as? ReturnGestureAction
-            return tapGestureRecognizerActionInstance
-        }
-    }
-    func handleTapToAction(action: (() -> Void)?)
-     {
-         let gesture = UITapGestureRecognizer(target: self, action: #selector(tapGestureHanldeAction))
-         self.tapGestureRecognizerAction = action
-         self.isUserInteractionEnabled = true
-         self.addGestureRecognizer(gesture)
-     }
-    @objc func tapGestureHanldeAction()
-    {
-        if let action = self.tapGestureRecognizerAction {
-            action?()
-        } else {
-            print("no action")
-        }
-    }
-}
+
 extension HomeVC{
     func callGetUserInfo() {
-        ApiCall().get(apiUrl: HomeVC.apiLink, model: UserListModel.self, isLoader: false) { (success, responseData) in
-            if success, let responseData = responseData as? UserListModel {
-                self.arrParent = responseData.child ?? []
+        ApiCall().get(apiUrl: HomeVC.apiLink, model: UserList.self, isLoader: false) { (success, responseData) in
+            if success, let responseData = responseData as? [UserList]{
+                
+                
+                self.arrChild = responseData[0].child ?? []
+               // self.arrChild = responseData
                 self.tblUserList.reloadData()
             } else {
                 self.mainThread {

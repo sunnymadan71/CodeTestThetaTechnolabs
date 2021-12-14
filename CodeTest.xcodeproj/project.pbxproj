@@ -24,8 +24,9 @@
 		5E6C56F3276772D20017DE8C /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C56F2276772D20017DE8C /* TabBarVC.swift */; };
 		5E6C56FC27677B6E0017DE8C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C56FB27677B6E0017DE8C /* ProfileVC.swift */; };
 		5E6C56FE27677B780017DE8C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C56FD27677B780017DE8C /* HomeVC.swift */; };
+		5ED04F242768B6DA0096DD48 /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED04F232768B6DA0096DD48 /* UserListModel.swift */; };
+		5ED04F262768B6E30096DD48 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED04F252768B6E30096DD48 /* Child.swift */; };
 		5ED7606C27678B5B00DC112F /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED7606B27678B5B00DC112F /* Authentication.storyboard */; };
-		5ED7606E27678EE500DC112F /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7606D27678EE500DC112F /* UserListModel.swift */; };
 		5ED760702767900200DC112F /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED7606F2767900200DC112F /* ApiCall.swift */; };
 		A4FC01961486AD2151120D4C /* Pods_CodeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3820D8814B86E28D27005AA1 /* Pods_CodeTest.framework */; };
 		B392CD11FF9D867E109613B7 /* Pods_CodeTest_CodeTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7147FC60C012402C718B9BE1 /* Pods_CodeTest_CodeTestUITests.framework */; };
@@ -75,8 +76,9 @@
 		5E6C56F2276772D20017DE8C /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		5E6C56FB27677B6E0017DE8C /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		5E6C56FD27677B780017DE8C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		5ED04F232768B6DA0096DD48 /* UserListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
+		5ED04F252768B6E30096DD48 /* Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
 		5ED7606B27678B5B00DC112F /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
-		5ED7606D27678EE500DC112F /* UserListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
 		5ED7606F2767900200DC112F /* ApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
 		7147FC60C012402C718B9BE1 /* Pods_CodeTest_CodeTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeTest_CodeTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D494E53888AF4645B20394 /* Pods-CodeTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeTestTests.release.xcconfig"; path = "Target Support Files/Pods-CodeTestTests/Pods-CodeTestTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -242,7 +244,8 @@
 		5E6C56FF276782030017DE8C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5ED7606D27678EE500DC112F /* UserListModel.swift */,
+				5ED04F232768B6DA0096DD48 /* UserListModel.swift */,
+				5ED04F252768B6E30096DD48 /* Child.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -503,11 +506,12 @@
 				5E6C56B427675F7C0017DE8C /* AppDelegate.swift in Sources */,
 				5ED760702767900200DC112F /* ApiCall.swift in Sources */,
 				5E6C56F3276772D20017DE8C /* TabBarVC.swift in Sources */,
-				5ED7606E27678EE500DC112F /* UserListModel.swift in Sources */,
 				5E6C56E927676D870017DE8C /* GFunction.swift in Sources */,
 				5E6C56EB27676E5F0017DE8C /* GEnum.swift in Sources */,
 				5E6C56E727676B5F0017DE8C /* Validation.swift in Sources */,
+				5ED04F242768B6DA0096DD48 /* UserListModel.swift in Sources */,
 				5E6C56FE27677B780017DE8C /* HomeVC.swift in Sources */,
+				5ED04F262768B6E30096DD48 /* Child.swift in Sources */,
 				5E6C56B627675F7C0017DE8C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
